@@ -1,0 +1,43 @@
+.row {
+  margin-top: 5px;
+}
+
+table {
+  background-color: #36454f;
+  border-style: solid;
+  border-collapse: collapse;
+}
+
+tr {
+  margin-bottom: 10px; /* Add margin below each table row */
+}
+
+td {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  height: 75px;
+  width: 120px;
+}
+
+#tbResult {
+  height: 75px;
+  background-color: gray;
+  font-size: xx-large;
+}
+
+.cell {
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 600px;
+}

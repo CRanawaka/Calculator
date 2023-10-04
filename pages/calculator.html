@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <table class="table table-bordered border-dark">
+
+            <div class="row">
+                <tr>
+                    <td colspan="3">
+                        <input type="text" class="form-control" id="tbResult" placeholder="">
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-danger" onclick="clearResult()"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">CLEAR</button>
+                    </td>
+                </tr>
+            </div>
+            <div class="row">
+                <tr>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('1')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">1</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('2')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">2</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('3')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">3</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-secondary" onclick="appendToResult('+')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: xx-large; font-family: sans-serif;">+</button>
+                    </td>
+                </tr>
+            </div>
+            <div class="row">
+                <tr>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('4')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">4</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('5')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">5</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('6')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">6</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-secondary" onclick="appendToResult('-')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: xx-large; font-family: sans-serif;">-</button>
+                    </td>
+                </tr>
+            </div>
+            <div class="row">
+                <tr>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('7')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">7</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('8')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">8</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('9')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">9</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-secondary" onclick="appendToResult('/')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: xx-large; font-family: sans-serif;">/</button>
+                    </td>
+                </tr>
+            </div>
+            <div class="row">
+                <tr>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('.')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">.</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="appendToResult('0')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">0</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-light" onclick="calculateResult()"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: larger; font-family: sans-serif;">=</button>
+                    </td>
+                    <td class="cell">
+                        <button type="button" class="btn btn-secondary" onclick="appendToResult('*')"
+                            style="font-weight: bold; letter-spacing: 2px; font-size: xx-large; font-family: sans-serif;">*</button>
+                    </td>
+                </tr>
+            </div>
+        </table>
+    </div>
+    </div>
+
+    <script src="../js/myScript.js"></script>
+</body>
+
+</html>
